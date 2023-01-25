@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+* {
+	box-sizing: border-box;
+}
+
+#header--div {
+	width: 1000px;
+	border: solid;
+	margin: 0 auto;
+}
+
+#header--start {
+	display: flex;
+	justify-content: space-between;
+	margin-left: 30px;
+}
+
+#header--title {
+	display: flex;
+}
+
+#header--sns {
+	display: flex;
+}
