@@ -48,8 +48,10 @@
 							<b>블로그명</b>
 						</div>
 						<div class="raw--right">
-							<input id="pop--name" name="name" value="${headLineEntity.name }">
-							<small>한글, 영문, 숫자, 혼용가능 (4~25자 이내)</small>
+							<input id="pop--name" name="name" value="${headLineEntity.name }"
+								onkeyup="characterCheck(this);"
+								onkeydown="characterCheck(this);"> <small>한글,
+								영문, 숫자, 혼용가능 (4~25자 이내)</small>
 						</div>
 					</div>
 
@@ -62,12 +64,10 @@
 							<div class="custom-file">
 								<!-- 보내는인풋 -->
 								<label id="header--label" class="custom-file-label"
-									for="customfile">이미지 등록</label> 
-									<input type="file" name="file"
-									class="custom-file-input" id="customfile"> 
-									<input
-									id="filename" name="filename" disabled="disabled">
-									<img class="img--trash" alt="이미지휴지통" src="images/trashcan.png">
+									for="customfile">이미지 등록</label> <input type="file" name="file"
+									class="custom-file-input" id="customfile"> <input
+									id="filename" name="filename" disabled="disabled"> <img
+									class="img--trash" alt="이미지휴지통" src="images/trashcan.png">
 
 							</div>
 
@@ -82,6 +82,7 @@
 						</div>
 						<div class="raw--right">
 							<span class="sns--url">http://www.youtube.com/@</span> <input
+								onkeyup="socialCheck(this);" onkeydown="socialCheck(this);"
 								class="sns--input" name="youtubeUrl"
 								value="${headLineEntity.instaUrl }"> <small>
 								User ID 입력 </small>
@@ -94,6 +95,7 @@
 						</div>
 						<div class="raw--right">
 							<span class="sns--url">http://www.instagram.com/</span> <input
+								onkeyup="socialCheck(this);" onkeydown="socialCheck(this);"
 								class="sns--input" name="instaUrl"
 								value="${headLineEntity.youtubeUrl }"> <small>
 								User ID 입력 </small>
