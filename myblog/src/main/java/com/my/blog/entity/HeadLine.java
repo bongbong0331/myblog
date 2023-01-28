@@ -1,7 +1,5 @@
 package com.my.blog.entity;
 
-import java.sql.Timestamp;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -27,13 +25,13 @@ public class HeadLine {
 	@Column(nullable = false, length = 20)
 	private String name;
 	
-	@Column(nullable = false)
+	@Column
 	private String img;
 	
-	@Column(nullable = false)
+	@Column
 	private String youtubeUrl;
 	
-	@Column(nullable = false)
+	@Column
 	private String instaUrl;
 	
 	

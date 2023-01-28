@@ -6,7 +6,6 @@
 
 #header--div {
 	width: 1000px;
-	border: solid;
 	margin: 0 auto;
 }
 
@@ -22,4 +21,170 @@
 
 #header--sns {
 	display: flex;
+	margin-right: 34px;
+	margin-top: 22px;
+}
+
+#header--sns img {
+	margin: 5px;
+	margin-right: 10px;
+}
+
+#set--logo {
+	margin-top: 10px;
+}
+
+.img--logo {
+	width: 30px;
+	height: 30px;
+}
+
+/*
+pop-up start
+*/
+.popup--wrap {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+	text-align: center;
+	z-index: 999;
+}
+
+.popup--wrap:after {
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	content: '';
+}
+
+.inner--outbox {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.pop--inner {
+	margin: auto;
+	display: flex;
+	width: 780px;
+	height: 500px;
+	flex-direction: column;
+	display: flex;
+	justify-content: space-between;
+	padding: 40px;
+	border-radius: 20px;
+	vertical-align: middle;
+	background-color: #fff;
+}
+
+.pop--raw {
+	display: flex;
+	width: 700px;
+	justify-content: space-between;
+}
+
+.raw--left {
+	display: flex;
+	margin-top: 10px;
+	margin-right: 6px;
+}
+
+.raw--right {
+	display: flex;
+	flex-direction: column;
+	width: 570px;
+}
+
+.input--img {
+	width: 480px;
+}
+
+.pop--btn {
+	display: flex;
+	justify-content: center;
+}
+
+#customfile {
+	display: none;
+}
+
+.custom-file {
+	display: flex;
+}
+
+
+.img--trash {
+	width: 14px;
+	height: 20px;
+	position: absolute;
+	margin-left: 540px;
+	margin-top: 10px;
+	display: none;
+}
+
+#filename {
+	width: 100%;
+	margin-left: 10px;
+}
+
+#header--label {
+	background-color: #07beb8;
+	color: white;
+	width: 120px;
+	height: 40px;
+	font-size: 14px;
+	display: inline-block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 6px;
+}
+
+.sns--url {
+	position: absolute;
+	margin-left: 5px;
+	margin-top: 6px;
+	font-size: 18px;
+	color: silver;
+}
+
+.sns--input {
+	padding-left: 230px;
+	height: 40px;
+	font-size: 18px;
+}
+
+#pop--name {
+	font-size: 18px;
+	height: 40px;
+	padding-left: 8px;
+}
+
+small {
+	color: silver;
+	margin: 5px 5px;
+}
+
+#btn--popcancel {
+	width: 160px;
+	height: 40px;
+	border: none;
+	background-color: rgb(0, 0, 0, 0.05);
+	color: graytext;
+	font-size: 18px;
+	border-radius: 10px;
+	margin: 5px;
+}
+
+#btn--popsave {
+	width: 160px;
+	height: 40px;
+	border: none;
+	background-color: #07beb8;
+	color: white;
+	font-size: 18px;
+	border-radius: 10px;
+	margin: 5px;
 }

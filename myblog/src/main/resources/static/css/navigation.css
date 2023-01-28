@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+#nav--list{
+	width: 170px;
+	flex-direction: column;
+	display: flex;
+	padding: 10px;
+	border-radius: 20px;
+	border: dotted;
+}
+
+#nav--top{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
